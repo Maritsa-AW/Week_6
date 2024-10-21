@@ -3,9 +3,9 @@
 // Declare student data
 struct Student{
 	std::string Nim;
-	int Uts;
-	int Uas;
-	int avg;
+	float Uts;
+	float Uas;
+	float avg;
 };
 
 int main () {

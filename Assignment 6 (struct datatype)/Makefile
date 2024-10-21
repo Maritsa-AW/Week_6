@@ -1,27 +1,27 @@
 # Target to compile the object file
-fileName: fileName.o
-	g++ fileName.o -o fileName.exe
+Examresults: Examresults.o
+	g++ Examresults.o -o Examresults.exe
 
 # Target to compile the C++ program
-fileName.o: fileName.cpp
-	g++ -c fileName.cpp -o fileName.o
+Examresults.o: Examresults.cpp
+	g++ -c Examresults.cpp -o Examresults.o
 
 # Target to run the program (interactively)
-run: fileName
-	./fileName.exe
+run: Examresults
+	./Examresults.exe
 
 # Target to compile the object Test file
-fileNameTest: fileNameTest.o
-	g++ fileNameTest.o -o fileNameTest.exe
+ExamresultsTest: ExamresultsTest.o
+	g++ ExamresultsTest.o -o ExamresultsTest.exe
 
 # Target to compile the C++ Test program
-fileNameTest.o: fileNameTest.cpp
-	g++ -c fileNameTest.cpp -o fileNameTest.o
+ExamresultsTest.o: ExamresultsTest.cpp
+	g++ -c ExamresultsTest.cpp -o ExamresultsTest.o
 
 # Target to run the Test program
-test: fileNameTest
-	./fileNameTest.exe
+test: ExamresultsTest
+	./ExamresultsTest.exe
 
 # Target to clean up compiled files
 clean:
-	rm -f fileName.o fileNameTest.o fileName.exe fileNameTest.exe
+	rm -f Examresults.o ExamresultsTest.o Examresults.exe ExamresultsTest.exe

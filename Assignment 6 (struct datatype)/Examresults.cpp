@@ -27,7 +27,7 @@ int main () {
 		std::cin >> myStudent[i].Uts;
 		std::cout << "Enter UAS:";
 		std::cin >> myStudent[i].Uas;
-		myStudent[i].avg=(myStudent[i].Uts+myStudent[i].Uas)/2;
+		myStudent[i].avg=(myStudent[i].Uts+myStudent[i].Uas)/2.0;
 	}
 	std::cout << "========================" << std::endl;
 	// Showing the result of the student data input
